@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 1</h1>
+<p id="demo"></p>
+
+<h1>Bài 2</h1>
+<input id="num" type="text">
+<button type="button" onclick="tinhTong()">Tính</button>
+<p id="tong"></p>
+</body>
+<script>
+    let text = "";
+    for (let i = 0; i <5 ; i++) {
+        text += "The number is " + i + "<br>";
+    }
+   document.getElementById("demo").innerHTML = text;
+
+    function tinhTong(){
+        let input = +document.getElementById("num").value;
+        let tong = 0;
+        for (let i = 1; i <=input ; i++) {
+            tong = tong + i;
+        }
+        document.getElementById("tong").innerHTML = tong;
+
+    }
+</script>
+</html>
